@@ -1,0 +1,3 @@
+Przenieść PANIC, PANIC_ASSERT i ASSERT z system.h do bardziej ogólnego pliku. Najlepiej system.h wywalić z archa do czegoś ogólnego, a w archu dać plik arch.h.
+
+Zająć się sterownikami i systemem plików. Trzeba to wzajemnie powiązać.

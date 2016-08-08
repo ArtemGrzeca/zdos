@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="zdos" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/zdos" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="kernel/arch/i386/arch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/boot.S" />
+		<Unit filename="kernel/arch/i386/cpuid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/crti.S" />
+		<Unit filename="kernel/arch/i386/crtn.S" />
+		<Unit filename="kernel/arch/i386/gdt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/idt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/irq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/irqasm.asm" />
+		<Unit filename="kernel/arch/i386/isr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/israsm.asm" />
+		<Unit filename="kernel/arch/i386/kheap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/arch/i386/paging.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/driver/kb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/driver/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/driver/tty.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/include/kernel/arch/arch.h" />
+		<Unit filename="kernel/include/kernel/arch/cpuid.h" />
+		<Unit filename="kernel/include/kernel/arch/gdt.h" />
+		<Unit filename="kernel/include/kernel/arch/idt.h" />
+		<Unit filename="kernel/include/kernel/arch/irq.h" />
+		<Unit filename="kernel/include/kernel/arch/isr.h" />
+		<Unit filename="kernel/include/kernel/arch/kheap.h" />
+		<Unit filename="kernel/include/kernel/arch/multiboot.h" />
+		<Unit filename="kernel/include/kernel/arch/paging.h" />
+		<Unit filename="kernel/include/kernel/driver/device.h" />
+		<Unit filename="kernel/include/kernel/driver/kb.h" />
+		<Unit filename="kernel/include/kernel/driver/timer.h" />
+		<Unit filename="kernel/include/kernel/driver/tty.h" />
+		<Unit filename="kernel/include/kernel/driver/vga.h" />
+		<Unit filename="kernel/include/kernel/system/bootlog.h" />
+		<Unit filename="kernel/include/kernel/system/ordered_array.h" />
+		<Unit filename="kernel/include/kernel/system/system.h" />
+		<Unit filename="kernel/kernel/kernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/system/bootlog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/system/ordered_array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="kernel/system/system.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/include/stdio.h" />
+		<Unit filename="libc/include/stdlib.h" />
+		<Unit filename="libc/include/stdstack.h" />
+		<Unit filename="libc/include/string.h" />
+		<Unit filename="libc/include/sys/cdefs.h" />
+		<Unit filename="libc/include/xprintf.h" />
+		<Unit filename="libc/stdio/printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/stdio/putchar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/stdio/puts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/stdlib/abort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/stdlib/itoa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/stdstack/intstack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/memcmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/memcpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/memmove.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/memset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/strcat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/string/strlen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libc/xprintf/xprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
